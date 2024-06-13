@@ -1,0 +1,10 @@
+import cv2
+img_graycsale = cv2.imread(r'C:\Users\Lenovo\Desktop\input.jpg',0)
+img_color = cv2.imread(r'C:\Users\Lenovo\Desktop\input.jpg',1)
+img_unchanged = cv2.imread(r'C:\Users\Lenovo\Desktop\input.jpg',-1)
+cv2.imshow('graycsale image', img_graycsale)
+cv2.imshow('img color',img_color)
+cv2.imshow('img unchanged',img_unchanged)
+cv2.waitKey(0)
+cv2.destroyAllWindows(Q)
+cv2.imwrite('grayscale.jpg',img_graycsale)
